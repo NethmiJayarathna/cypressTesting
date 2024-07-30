@@ -28,7 +28,7 @@ describe('handle dropdowns',()=>{
 
         cy.get('#searchInput').type('Delhi')
 
-        cy.get('.suggestion-title').contains('Delhi University').click() // get all suggetions,choose one that we want and click
+        cy.get('.suggestion-title').contains('Delhi University').click() // get all suggestions,choose one that we want and click
     
     })
 
@@ -40,7 +40,7 @@ describe('handle dropdowns',()=>{
 
         cy.wait(3000)
 
-        cy.get('div.wM6W7d>span').should('have.length',13) // get all suggetions and count total number of suggetions
+        cy.get('div.wM6W7d>span').should('have.length',13) // get all suggestions and count total number of suggetions
 
         //read each and every options in to this element
         cy.get('div.wM6W7d>span').each(($el,index,$list)=>{
